@@ -16,6 +16,8 @@ body{
     width: 100%;
     height: 100%;
     background-image: url('img/hero_img.jpg');
+    background-size: cover;
+    background-position: center;
     z-index: -1;
     filter: grayscale();
 }
@@ -46,6 +48,22 @@ body{
     background-color: var(--pink);
 }
 
+.home{
+    height: 2000px;
+    background-image: url('img/bg_home.png');
+    background-repeat: no-repeat;
+}
+
+.navbarcss .navbar-brand, .navbarcss .offcanvas-title{
+    font-family: "Sacramento", serif;
+    font-size: 2.2rem;
+}
+
+.navbarcss .nav-link{
+    font-family: "Work Sans", serif;
+    text-transform: uppercase;
+}
+
 /* Laptop */
 @media (max-width:996px) {
     html{
@@ -57,10 +75,24 @@ body{
     html{
         font-size: 62.5%;
     }
+    .navbarcss .navbar-brand, .navbarcss .offcanvas-title{
+        font-size: 7rem;
+    }
+    .navbarcss .nav-link{
+        font-size: 5rem;
+        text-align: center;
+    }
 }
 /* Mobile Phone */
 @media (max-width:576px) {
     html{
         font-size: 62.5%;
+    }
+    .navbarcss .navbar-brand, .navbarcss .offcanvas-title{
+        font-size: 3rem;
+    }
+    .navbarcss .nav-link{
+        font-size: 2.7rem;
+        text-align: center;
     }
 }
