@@ -49,9 +49,78 @@ body{
 }
 
 .home{
-    height: 2000px;
-    background-image: url('img/bg_home.png');
-    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url('img/bg_home.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -6rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2{
+    font-family: "Sacramento", serif;
+    font-size: 6rem;
+    color: var(--pink);
+}
+
+.home h4, .home p{
+    font-family: "Work Sans", serif;
+    color: #444;
+}
+
+.home .couple{
+    margin-top: 100px;
+}
+
+.home p{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+.home .couple h3{
+    font-family: "Sacramento", serif;
+    color: var(--pink);
+    font-size: 2.4rem;
+}
+.home .couple p{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+.home .couple img{
+    width: 100%;
+}
+
+.info{
+    background-color: var(--bg);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.info h3{
+    color: var(--pink);
+    font-family: "Sacramento", serif;
+    font-size: 5rem;
+}
+
+.info .alamat{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+    
+}
+
+.info .deskripsi{
+    font-family: "Work Sans", serif;
+    font-weight: 300;
+}
+.navbarcss{
+    background-color: rgba(255, 255, 2555, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.navbarcss .offcanvas{
+    height: 100vh;
 }
 
 .navbarcss .navbar-brand, .navbarcss .offcanvas-title{
@@ -63,6 +132,7 @@ body{
     font-family: "Work Sans", serif;
     text-transform: uppercase;
 }
+
 
 /* Laptop */
 @media (max-width:996px) {
@@ -92,7 +162,7 @@ body{
         font-size: 3rem;
     }
     .navbarcss .nav-link{
-        font-size: 2.7rem;
+        font-size: 1.5rem;
         text-align: center;
     }
 }
