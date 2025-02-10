@@ -107,13 +107,32 @@ body{
 .info .alamat{
     font-family: "Work Sans", serif;
     font-size: 1rem;
-    
 }
 
 .info .deskripsi{
     font-family: "Work Sans", serif;
     font-weight: 300;
+    margin-bottom: 7rem;
 }
+
+.info iframe{
+    width: 100%;
+    height: 50%;
+}
+
+.info .card{
+    margin-top: 2rem;
+    background-color: #444;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    color: white;
+}
+.info .card-header{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+}
+.info .card-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.425);
+}
+
 .navbarcss{
     background-color: rgba(255, 255, 2555, 0.5);
     backdrop-filter: blur(4px);
