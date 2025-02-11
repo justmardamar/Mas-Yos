@@ -138,6 +138,34 @@ body{
     backdrop-filter: blur(4px);
 }
 
+
+.story{
+    min-height: 100vh;
+    background-image: url('img/bg_home.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.story h2{
+    font-family: "Sacramento", serif;
+    font-size: 5rem;
+    color: var(--pink);
+    text-align:center;
+}
+.story p{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+.story .storygambar img{
+    height: 30%;
+    border-radius: 13px;
+    margin-top: 1rem;
+}
+
+
 .navbarcss .offcanvas{
     height: 100vh;
 }
