@@ -23,7 +23,7 @@ body{
 }
 .hero{
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 .hero h1{
     font-family: "Sacramento", serif;
@@ -133,19 +133,15 @@ body{
     border-top: 1px solid rgba(255, 255, 255, 0.425);
 }
 
-.navbarcss{
-    background-color: rgba(255, 255, 2555, 0.5);
-    backdrop-filter: blur(4px);
+.story{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-
-.story{
-    min-height: 100vh;
-    background-image: url('img/bg_home.jpg');
-    background-size: cover;
-    background-position: center;
-    padding-top: 15rem;
-    padding-bottom: 5rem;
+.story span{
+    font-family: "Work Sans", serif;
+    font-size: 2rem;
+    color: #444;
 }
 
 .story h2{
@@ -159,12 +155,50 @@ body{
     font-size: 1rem;
 }
 
-.story .storygambar img{
-    height: 30%;
-    border-radius: 13px;
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0;
     margin-top: 1rem;
+    position: relative;
+}
+.timeline::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #0a0a0a;
+    left: 50%;
+}
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
 }
 
+.timeline li::before,
+.timeline li::after{
+    content: "";
+    display: table;
+}
+
+.timeline::after{
+    clear: both;
+}
+
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #444;
+    transform: translate(-50%);
+}
+
+
+.navbarcss{
+    background-color: rgba(255, 255, 2555, 0.5);
+    backdrop-filter: blur(4px);
+}
 
 .navbarcss .offcanvas{
     height: 100vh;
@@ -188,15 +222,18 @@ body{
     }
 }
 /* Tablet */
-@media (max-width:768) {
+@media (max-width:768px) {
     html{
         font-size: 62.5%;
     }
     .navbarcss .navbar-brand, .navbarcss .offcanvas-title{
-        font-size: 7rem;
+        font-size: 3.7rem;
+    }
+    .sticky-top{
+        overflow: hidden;
     }
     .navbarcss .nav-link{
-        font-size: 5rem;
+        font-size: 2rem;
         text-align: center;
     }
 }

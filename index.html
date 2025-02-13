@@ -147,15 +147,29 @@
     <section id="Story" class="story">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-8 col-10 text-center">
+                    <span>Bagaimana cinta kita bersemi</span>
                     <h2>Story</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque repellat dolore rem ipsa quisquam mollitia repellendus, aliquam culpa natus aut quaerat exercitationem cupiditate illo error. Recusandae in iste error!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt atque laudantium dolore facilis iste eos libero officia, adipisci iusto. Quis ab voluptate consequuntur atque soluta facere incidunt at, quas omnis.</p>
                 </div>
-                <div class="col-md-10 storygambar justify-content-center">
-                    <img src="img/bg_gambar.png" alt="Yosua & mbak" class="col-md-5 col-10">
-                    <img src="img/bg_gambar.png" alt="Yosua & mbak" class="col-md-6 col-10">
-                    <img src="img/bg_gambar.png" alt="Yosua & mbak" class="col-md-6 col-10">
-                    <img src="img/bg_gambar.png" alt="Yosua & mbak" class="col-md-5 col-10">
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image"></div>
+                            <div class="timeline-text">
+                                <div class="timeline-heading">
+                                    <h4>Pertama Ketemu</h4>
+                                    <span>1 juni 2020</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita aliquid amet accusamus quos consectetur repellat repellendus suscipit ab ipsam est! Itaque beatae eius eaque quas praesentium quaerat ducimus incidunt optio.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -198,5 +212,20 @@
             return `${genitivePlural}`;
         }
     </script>
+
+    <script>
+        const TombolNav = document.querySelector('.navbar-toggler');
+        const stickytop = document.querySelector('.sticky-top');
+        const offcanvas = document.querySelector('.offcanvas')
+
+        TombolNav.addEventListener('click',function(){
+            stickytop.style.overflow = 'visible';
+        })
+        offcanvas.addEventListener('hidden.bs.offcanvas',function(){
+            stickytop.style.overflow = 'hidden';
+        })
+
+    </script>
+
   </body>
 </html>
