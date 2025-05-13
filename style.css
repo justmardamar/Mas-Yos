@@ -283,6 +283,26 @@ body{
     text-transform: uppercase;
 }
 
+.gift{
+    min-height: 100vh;
+    background-image: url('img/bg_home.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+.gift h2{
+    font-family: "Sacramento", serif;
+    font-size: 6rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+.gift p{
+    font-family: "Work Sans", serif;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 300;
+}
 
 
 /* Laptop */
