@@ -304,6 +304,24 @@ body{
     font-weight: 300;
 }
 
+footer{
+    background-color: var(--pink);
+    padding-top: 3rem;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    margin:0.5rem;
+}
+footer a{
+    color: var(--bg);
+}
+
 
 /* Laptop */
 @media (max-width:996px) {
