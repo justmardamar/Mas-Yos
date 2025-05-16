@@ -249,9 +249,11 @@
                             <div class="modal-body">
                                 <p>Yosua bla</p>
                                 <p>BRI</p>
-                                <button class="btn btn-primary">13761254376</button>
+                                <p id="bri">13761254376</p>
+                                <button class="btn btn-primary" id="btnBri">Salin</button>
                                 <p>BNI</p>
-                                <button class="btn btn-primary">3123321312</button>
+                                <p id="bni">3123321312</p>
+                                <button class="btn btn-primary" id="btnBni">salin</button>
                                 <p>Terimakasih atas hadiah yang diberikan semoga Tuhan memberkati</p>
                             </div>
                             <div class="modal-footer">
@@ -393,9 +395,20 @@
 
         disableScroll();
     </script>
-
     <script>
-        tombol = document.getElementById('myBtn')    
+        const bri = document.getElementById('bri').innerText;
+        var btnBni = document.getElementById('btnBri');
+        var btnBri = document.getElementById('btnBni');
+        
+        btnBni.addEventListener(function () {
+            const bni = document.getElementById('bni').innerText;
+            navigator.clipboard.writeText(bni).then(()=>{
+                alert('kalimat telah disalin')
+            })
+            .catch(err => {
+                console.log(err)
+            })
+        })
     </script>
   </body>
 </html>
