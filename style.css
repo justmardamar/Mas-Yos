@@ -435,4 +435,34 @@ footer a{
     .timeline li .timeline-panel::after{
         top: 31px;
     }
+    .home .teksacara{
+    height: 100vh;
+    }
+    .home .couple .laki{
+        height: 100vh;
+        background-image: url('img/bg_home.jpg');
+    }
+    .home .couple .perempuan{
+        height: 100vh;
+    }
+
+    .home p{
+        font-family: "Work Sans", serif;
+        font-size: 1rem;
+    }
+
+    .home .couple h3{
+        font-family: "Sacramento", serif;
+        color: var(--pink);
+        font-size: 5rem;
+    }
+    .home .couple p{
+        font-family: "Work Sans", serif;
+        font-size: 1.5rem;
+    }
+
+    .home .couple img{
+        margin-top: 2rem;
+        width: 100%;
+    }
 }

@@ -38,7 +38,7 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link" href="#Home">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                         <a class="nav-link" href="#Info">Info</a>
                         <a class="nav-link" href="#Story">Story</a>
                         <a class="nav-link" href="#Galery">Galery</a>
@@ -52,14 +52,14 @@
     <section id="home" class="home">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
+                <div class="col-md-8 text-center teksacara">
                     <h2>Acara Pernikahan</h2>
                     <h4>Diselenggarangan pada tanggal 9 Agustus 2026,Di Salatiga, Jawa Tengah</h4>
                     <p>Oleh Karena itu, Kami dengan segala hormat kami mengundang Bapak, Ibu,dan Saudara/i untuk menghadiri upacara pernikahan kami.</p>
                 </div>
             </div>
             <div class="row couple">
-                <div class="col-lg-6">
+                <div class="col-lg-6 laki">
                     <div class="row">
                         <div class="col-8 text-end">
                             <h3>Yosua</h3>
@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 perempuan">
                     <div class="row">
                         <div class="col-4">
                             <img src="img/photo_p.jpg" class="img-responsive rounded-circle" width="250" height="200">
@@ -249,11 +249,13 @@
                             <div class="modal-body">
                                 <p>Yosua bla</p>
                                 <p>BRI</p>
-                                <p id="bri">13761254376</p>
-                                <button class="btn btn-primary" id="btnBri">Salin</button>
+                                <p>87391312312</p>
+                                <input type="text" value="87391312312" id="bri" hidden>
+                                <button class="btn btn-primary" onclick="btnBri()">Salin</button>
                                 <p>BNI</p>
-                                <p id="bni">3123321312</p>
-                                <button class="btn btn-primary" id="btnBni">salin</button>
+                                <p>3796192</p>
+                                <input type="text" value="3796192" id="bni" hidden>
+                                <button class="btn btn-primary" onclick="btnBni()">salin</button>
                                 <p>Terimakasih atas hadiah yang diberikan semoga Tuhan memberkati</p>
                             </div>
                             <div class="modal-footer">
@@ -339,6 +341,7 @@
         const TombolNav = document.querySelector('.navbar-toggler');
         const stickytop = document.querySelector('.sticky-top');
         const offcanvas = document.querySelector('.offcanvas')
+        const navLinks = document.querySelectorAll('.offcanvas-body .nav-link');
 
         TombolNav.addEventListener('click',function(){
             stickytop.style.overflow = 'visible';
@@ -346,6 +349,12 @@
         offcanvas.addEventListener('hidden.bs.offcanvas',function(){
             stickytop.style.overflow = 'hidden';
         })
+        navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasInstance.hide(); // Menutup offcanvas saat tautan ditekan
+        });
+    });
     </script>
     <script>
 
@@ -396,19 +405,22 @@
         disableScroll();
     </script>
     <script>
-        const bri = document.getElementById('bri').innerText;
-        var btnBni = document.getElementById('btnBri');
-        var btnBri = document.getElementById('btnBni');
+        function btnBri(){
+            var bri = document.getElementById('bri')
+            bri.select();
+            bri.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(bri.value)
+            alert("Berhasi di Copy");
+        }
+        function btnBni(){
+            var bni = document.getElementById('bni')
+            bni.select();
+            bni.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(bni.value)
+            alert("Berhasi di Copy");
+        }
         
-        btnBni.addEventListener(function () {
-            const bni = document.getElementById('bni').innerText;
-            navigator.clipboard.writeText(bni).then(()=>{
-                alert('kalimat telah disalin')
-            })
-            .catch(err => {
-                console.log(err)
-            })
-        })
+        
     </script>
   </body>
 </html>
