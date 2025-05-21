@@ -439,6 +439,7 @@ footer a{
     height: 100vh;
     }
     .home .couple .laki{
+        padding-top: -50vh;
         height: 100vh;
         background-image: url('img/bg_home.jpg');
     }
@@ -464,5 +465,13 @@ footer a{
     .home .couple img{
         margin-top: 2rem;
         width: 100%;
+    }
+
+    .timelapse{
+        height: 100vh;
+    }
+
+    .maps{
+        height: 100vh;
     }
 }
