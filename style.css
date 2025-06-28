@@ -94,13 +94,13 @@ body{
 }
 
 .info{
-    background-color: var(--bg);
+    background-color: var(--pink);
     color: white;
     padding-top: 10rem;
     padding-bottom: 8rem;
 }
 .info h3{
-    color: var(--pink);
+    color: white;
     font-family: "Sacramento", serif;
     font-size: 5rem;
     font-weight: bold;
@@ -124,15 +124,15 @@ body{
 
 .info .card{
     margin-top: 2rem;
-    background-color: #444;
+    background-color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.425);
-    color: white;
+    color: black;
 }
 .info .card-header{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+    border-bottom: 1px solid rgb(126, 126, 126);
 }
 .info .card-footer{
-    border-top: 1px solid rgba(255, 255, 255, 0.425);
+    border-top: 1px solid rgb(126, 126, 126);
 }
 
 .story, .gallery{
@@ -468,7 +468,8 @@ footer a{
     }
 
     .timelapse{
-        height: 100vh;
+        height: 50vh;
+        margin-bottom: 25vh;
     }
 
     .maps{
